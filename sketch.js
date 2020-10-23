@@ -6,6 +6,8 @@ var engine, world;
 var box1, pig1;
 var backgroundImg,platform;
 
+var platform;
+
 function preload() {
     backgroundImg = loadImage("sprites/bg.png");
 }
@@ -15,6 +17,8 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
+
+    platform = new Ground(150, 305, 170);
 
     ground = new Ground(600,height,1200,20);
     platform = new Ground(150, 305, 300, 170);
